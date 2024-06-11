@@ -41,9 +41,11 @@ public class Chef {
 	public void fritarIngredientesLanche() {
 		System.out.println("FRITANDO A CARNE E OVO PARA O HAMBÚRGUER");
 	}
-	public void pedirParaTrocarGas(Waiter meuAmigo) {
-		meuAmigo.trocarGas();
-	}
+	// o método trocarGas para o waiter não está mais disponível
+	// agora que ele é default
+	// public void pedirParaTrocarGas(Waiter meuAmigo) {
+	//	meuAmigo.trocarGas();
+	//}
 	public void pedirParaTrocarGas(Warehouseman meuAmigo) {
 		meuAmigo.trocarGas();
 	}

@@ -26,15 +26,15 @@ public class GigaByteCafeteria {
 		almoxarife.controlarEntrada();
 		almoxarife.controlarSaida();
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
-		almoxarife.entregarIngredientes();
-		almoxarife.trocarGas();
+		// almoxarife.entregarIngredientes();
+		// almoxarife.trocarGas();
 		
 		Waiter atendente = new Waiter();
 		atendente.pegarLancheCozinha();
 		atendente.receberPagamento();
 		atendente.servindoMesa();
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
-		atendente.trocarGas();
+		// atendente.trocarGas();
 		
 		Client cliente = new Client();
 		cliente.escolherLanche();
@@ -49,7 +49,14 @@ public class GigaByteCafeteria {
 		cliente.consultarSaldoAplicativo();
 		
 		//já pensou os clientes ouvindo que o gás acabou ?
-		cozinheiro.pedirParaTrocarGas(atendente);
+		// 
+		/*
+		 * O método pedirParaTrocarGas não está mais disponível
+		 * porque ele chama o método trocarGas() do Waiter
+		 * que agora só está disponível para classes no mesmo
+		 * nível de pacote
+		 */
+		//cozinheiro.pedirParaTrocarGas(atendente);
 		cozinheiro.pedirParaTrocarGas(almoxarife);
 		
 	}

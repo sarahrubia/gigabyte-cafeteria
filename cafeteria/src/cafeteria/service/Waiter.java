@@ -11,10 +11,11 @@ public class Waiter {
 	public void receberPagamento() {
 		System.out.println("RECEBENDO PAGAMENTO");
 	}
-	public void trocarGas() {
+	// default ou sem modificador
+	void trocarGas() {
 		System.out.println("ATENDENTE TROCANDO O GÁS");
 	}
-	public void pegarPedidoBalcao() {
+	void pegarPedidoBalcao() {
 		System.out.println("PEGANDO O PEDIDO NO BALCÃO");
 	}
 }
