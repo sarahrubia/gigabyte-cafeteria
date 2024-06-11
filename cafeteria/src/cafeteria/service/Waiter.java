@@ -2,10 +2,10 @@ package cafeteria.service;
 
 public class Waiter {
 	public void servindoMesa() {
-		//...?
+		pegarLancheCozinha();
 		System.out.println("SERVINDO A MESA");
 	}
-	public void pegarLancheCozinha() {
+	private void pegarLancheCozinha() {
 		System.out.println("PEGANDO O LANCHE NA COZINHA");
 	}
 	public void receberPagamento() {
